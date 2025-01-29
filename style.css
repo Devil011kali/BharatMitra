@@ -1,0 +1,219 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p1 {
+    font-size: 2rem;
+    color: #black;
+    font-weight: bold;
+}
+snap {
+    color: red;
+}
+
+   /* navigation */
+
+nav {
+  display: flex;
+  padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20x 40x;
+}
+nav ul li a{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10x 20x;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 3s;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('phone-hero-image.jpg'); /* Add your hero image URL here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    filter: brightness(100%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff5722; /* Bright CTA button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 0 20px;
+    background-color: #1d1d1d; /* Dark feature box */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff5722; /* Accent color for feature headings */
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Light text for descriptions */
+}
+
+/* Countdown Timer */
+.container {
+  display: flex;
+    padding: 50px;
+    background-color: #1a1a1a;
+    border: 0.5px solid #737373;
+    justify-content: center;
+}
+
+.counter-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: 2px solid #990000;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  color: #fff;
+  margin: 0 10px;
+  font-size: 7px;
+}
+
+.counter {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* Pre-booking Section */
+.pre-booking {
+    background-color: #1c1c1c; /* Dark background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pre-booking h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #b0b0b0; /* Accent color for section title */
+}
+
+/* Footer */
+footer {
+    background-color: #121212; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #ff5722;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* Additional Styling for Links and Buttons */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
+applet
